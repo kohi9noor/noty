@@ -9,7 +9,12 @@ function createWindow(): void {
     width: 900,
     height: 670,
     show: false,
+    title: 'noty-mark made by kohinoor',
+    center: true,
     autoHideMenuBar: true,
+    vibrancy: 'under-window',
+    visualEffectState: 'active',
+    titleBarStyle: 'customButtonsOnHover',
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
